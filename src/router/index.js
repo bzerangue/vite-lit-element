@@ -1,6 +1,6 @@
 import { Router } from '@vaadin/router'
 
-const outlet = document.getElementById('outlet')
+const outlet = document.getElementById('brewery-app')
 const router = new Router(outlet)
 
 router.setRoutes([
