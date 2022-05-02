@@ -1,12 +1,13 @@
-import { html, css, LitElement } from 'lit'
-import {customElement, property} from 'lit/decorators.js';
-
+import { LitElement } from 'lit'
 
 export class NotFound extends LitElement {
   connectedCallback() {
     this.innerHTML = `
-      <h1>Page not found</h1>
-      The pathname was: ${this.location.pathname}
+    <link href="/styles.css" rel="stylesheet" />
+      <main id="brewery-content-section" class="wrapper flow">
+        <h1>Page not found</h1>
+        <p>The pathname was: ${this.location.pathname}</p>
+      </main>
     `;
   }
 }

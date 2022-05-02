@@ -1,5 +1,4 @@
-import { html, css, LitElement } from 'lit'
-import { customElement, property } from 'lit/decorators.js';
+import { html, LitElement } from 'lit'
 
 
 export class BreweryList extends LitElement {
@@ -29,7 +28,10 @@ export class BreweryList extends LitElement {
   render() {
     if (this.loading) {
       return html`
+      <link href="/styles.css" rel="stylesheet" />
+      <main id="brewery-content-section" class="wrapper flow">
         <p>Loading...</p>
+      </main>
       `;
     }
 

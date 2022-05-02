@@ -1,6 +1,4 @@
-import { html, css, LitElement } from 'lit'
-import {customElement, property} from 'lit/decorators.js';
-
+import { html, LitElement } from 'lit'
 
 export class BreweryApp extends LitElement {
   static get properties() {
@@ -38,7 +36,7 @@ export class BreweryApp extends LitElement {
 
     return html`
       
-    <link href="/styles.css" rel="stylesheet" />
+      <link href="/styles.css" rel="stylesheet" />
       <main id="brewery-content-section" class="wrapper flow">
         <h1>Breweries</h1>
 
